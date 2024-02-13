@@ -12,12 +12,12 @@ In addition, the following database environment is required:
 
 `CREATE DATABASE todo_db;`
 
-`CREATE TABLE Todo (
+```CREATE TABLE Todo (
     id INT PRIMARY KEY AUTO_INCREMENT,
     bezeichnung VARCHAR(255) NOT NULL,
     faelligkeit DATE DEFAULT CURRENT_DATE,
     status INT(1) DEFAULT 0
-);`
+);```
 
 `CREATE TABLE toggle (
     state TINYINT PRIMARY KEY DEFAULT 0
