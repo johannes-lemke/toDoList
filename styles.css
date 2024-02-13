@@ -1,0 +1,60 @@
+html {
+    font-family: Arial;
+}
+
+* {
+    padding: 5px !important;
+    border-radius: 10px !important;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    background-color: rgba(239, 239, 239, 0.5);
+}
+
+.container td {
+    padding: 8px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.container input[type="submit"] {
+    width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container_eintragen input[type="text"] {
+    width: 180px;
+    box-sizing: border-box;
+}
+
+.container_eintragen {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+td:nth-child(5) input[type="checkbox"] {
+    margin: 0 auto;
+    display: block;
+}
+
+td:nth-child(4) {
+    text-align: center;
+}
