@@ -1,4 +1,4 @@
-# to-do-list
+# toDoList
 
 A simple self-hosted to-do list to keep track of your open and completed To-Do's
 
