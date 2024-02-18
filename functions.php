@@ -1,6 +1,6 @@
 <?php
 
-function auflisten($mysqli)
+function auflisten($mysqli) // List Todos
 {
     echo "<h1>To Do's</h1>";
     $sql_config = "SELECT value FROM config WHERE setting = 'toggle_only_open_todos';";
@@ -106,7 +106,7 @@ function auflisten($mysqli)
 }
 
 
-function eintragen()
+function eintragen() // call Form to insert new Todos
 {
 ?>
     <div class="container_eintragen">
@@ -127,14 +127,14 @@ function eintragen()
 }
 
 
-function update_toggle($mysqli, $value)
+function update_toggle($mysqli, $value) // ALTER TABLE for toggle_only_open_todos
 {
     $sql = "update config set value = $value where setting = 'toggle_only_open_todos';";
     $mysqli->query($sql);
 }
 
 
-function update($mysqli, $id, $value)
+function update($mysqli, $id, $value) // ALTER TABLE for status checkbox
 {
     $sql = "update todo set status = $value where id = $id;";
     $mysqli->query($sql);
@@ -142,7 +142,7 @@ function update($mysqli, $id, $value)
 
 
 
-function speichern($mysqli, $tabelle, $daten)
+function speichern($mysqli, $tabelle, $daten) // INSERT INTO for neue To Do's
 {
     $spalten = array();
     $werte = array();

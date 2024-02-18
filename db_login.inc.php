@@ -5,7 +5,7 @@
         $server = "localhost";
         $user = "root";
         $password = "";
-        $port = "3306";
+        $port = "3307";
 
         $mysqli = new mysqli($server, $user, $password, $database, $port);
         if ($mysqli->connect_errno) {
